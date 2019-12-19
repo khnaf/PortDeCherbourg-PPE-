@@ -1,0 +1,61 @@
+﻿<Page x:Name="pagePrincipale" x:Class="WpfGescale.PagePrincipale"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfGescale"
+      mc:Ignorable="d" 
+      d:DesignHeight="350"
+      Title="" ShowsNavigationUI="False" Width="635">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="124*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="635" Grid.ColumnSpan="2">
+            <MenuItem x:Name="MenuNavire" Header="Navire">
+                <MenuItem x:Name="ItemNouveauNavire" Header="Nouveau" HorizontalAlignment="Left" Height="20" Click="MenuItem_Click"/>
+                <MenuItem x:Name="itemListeNavire" Header="Liste Navire" HorizontalAlignment="Left" Width="140" Click="itemListeNavire_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="Armateur" Header="Armateur">
+                <MenuItem x:Name="ItemNouveauArmateur" Header="Nouveau Armateur" HorizontalAlignment="Left" Click="ItemNouveauArmateur_Click"/>
+                <MenuItem Header="Liste Armateur" HorizontalAlignment="Left"  Click="ItemListeArmateur_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="menuItemTypeDeCargaison" Header="Types de Cargaisons">
+                <MenuItem x:Name="itemNouveauTypeDeCargaison" Header="Nouveau Type de Cargaison" HorizontalAlignment="Left" Click="itemNouveauTypeDeCargaison_Click"/>
+                <MenuItem x:Name="itemListeTypesDeCargaisons" Header="Liste Type De Cargaison" HorizontalAlignment="Left" Click="itemListeTypesDeCargaisons_Click"/>
+            </MenuItem>
+
+            <MenuItem x:Name="menuItemPavillon" Header="Pavillon">
+                <MenuItem x:Name="itemNouveauPavillon" Header="Nouveau Pavillon" HorizontalAlignment="Left" Click="itemNouveauPavillon_Click"/>
+                <MenuItem x:Name="itemListePavillon" Header="Liste Pavillon" HorizontalAlignment="Left" Click="itemListePavillon_Click" />
+            </MenuItem>
+            <MenuItem Header="Escale">
+                <MenuItem x:Name="itemNouvelleEscale" Header="Nouvelle Escale" HorizontalAlignment="Left" Width="140" Click="itemNouvelleEscale_Click"/>
+            </MenuItem>
+            <MenuItem Header="Commandant">
+                <MenuItem x:Name="itemNouveauCommandant" Header="Nouveau Commandant" HorizontalAlignment="Left" Width="213" Click="itemNouveauCommandant_Click" Margin="0,0,-3,0"/>
+                <MenuItem x:Name="itemListeCommandant" Header="Liste Commandant" HorizontalAlignment="Left" Width="213" Click="itemListeCommandant_Click" Margin="0,0,-3,0"/>
+            </MenuItem>
+
+            <MenuItem Header="Port">
+                <MenuItem x:Name="itemNouveauPort" Header="Nouveau Port" HorizontalAlignment="Left" Width="213" Click="itemNouveauPort_Click" Margin="0,0,-3,0"/>
+                <MenuItem x:Name="itemListePort" Header="Liste Port" HorizontalAlignment="Left" Width="213" Click="itemListePort_Click" Margin="0,0,-3,0"/>
+            </MenuItem>
+            <MenuItem Header="Type-navire">
+                <MenuItem x:Name="itemNouveauTypeNavire" Header="Nouveau type-navire" HorizontalAlignment="Left" Width="213" Click="itemNouveauTypeNavire_Click" Margin="0,0,-3,0"/>
+                <MenuItem x:Name="itemListeTypeNavire" Header="Liste type-navire" HorizontalAlignment="Left" Width="213" Click="itemListeTypeNavire_Click" Margin="0,0,-3,0"/>
+            </MenuItem>
+            <MenuItem Header="Pilote">
+                <MenuItem x:Name="itemNouveauPilote" Header="Nouveau pilote" HorizontalAlignment="Left" Width="213" Click="itemNouveauPilote_Click" Margin="0,0,-3,0"/>
+                <MenuItem x:Name="itemListePilote" Header="Liste pilote" HorizontalAlignment="Left" Width="213" Click="itemListePilote_Click" Margin="0,0,-3,0"/>
+            </MenuItem>
+            <MenuItem Header="Agent">
+                <MenuItem x:Name="itemNouveauAgent" Header="Nouveau agent" HorizontalAlignment="Left" Width="213" Click="itemNouveauAgent_Click" Margin="0,0,-3,0"/>
+                <MenuItem x:Name="itemListeAgent" Header="Liste agent" HorizontalAlignment="Left" Width="213" Click="itemListeAgent_Click" Margin="0,0,-3,0"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Page>

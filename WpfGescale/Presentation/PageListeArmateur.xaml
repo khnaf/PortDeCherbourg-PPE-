@@ -1,0 +1,30 @@
+﻿<Page x:Class="WpfGescale.PageListeArmateur"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfGescale"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="600"
+      Title="PageListeArmateur">
+
+    <Grid>
+        <DataGrid x:Name="dataGridListeArmateur" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Width="Auto" SelectionMode="Single"  CanUserReorderColumns="False" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Numero" Binding="{Binding Numero}"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding Nom}" />
+                <DataGridTextColumn Header="Adresse" Binding="{Binding Adresse}" />
+                <DataGridTextColumn Header="Code Postal" Binding="{Binding CodePostal}" />
+                <DataGridTextColumn Header="Ville" Binding="{Binding Ville}"/>
+                <DataGridTextColumn Header="Téléphone" Binding="{Binding Telephone}" />
+                <DataGridTextColumn Header="Fax" Binding="{Binding Fax}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+                <DataGridTextColumn Header="Code Pavillon" Binding="{Binding CodePavillon}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="buttonSupprimer" Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Click="ButtonSupprimer_Click" />
+        <Button x:Name="buttonEnregistrer" Content="Enregistrer" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="ButtonEnregistrer_Click" />
+        <Button x:Name="buttonRetour" Content="Retour" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Click="buttonRetour_Click_1" />
+
+    </Grid>
+</Page>

@@ -1,0 +1,56 @@
+﻿<Page x:Name="pageArmateur" x:Class="WpfGescale.PageArmateur"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfGescale"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      WindowTitle="Nouveau Armateur" ShowsNavigationUI="False" Loaded="PageArmateur_Loaded">
+
+    <Grid Name="GrilleNouveauArmateur" Margin="10">
+        <WrapPanel Name="WrapNouveauArmateur">
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelNumArmateur" Content="Numéro Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxNumArmateur" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" Text="{Binding Path=Numero,Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelNomArmateur" Content="Nom Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxNomArmateur" HorizontalAlignment="Left" Height="23" Margin="5"  TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Text="{Binding Path=Nom, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelAdreArmateur" Content="Adresse Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxAdreArmateur" HorizontalAlignment="Left" Height="23" Margin="5"  TextWrapping="Wrap" VerticalAlignment="Top" Width="367" Text="{Binding Path=Adresse, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelCodePostalArmateur" Content="Code postal Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxCodePostalArmateur" HorizontalAlignment="Left" Height="23" Margin="5"  TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="{Binding Path=CodePostal, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelVilleArmateur" Content="Ville Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxVilleArmateur" HorizontalAlignment="Left" Height="23" Margin="5"  TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Text="{Binding Path=Ville, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelTelArmateur" Content="Téléphone Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxTelArmateur" HorizontalAlignment="Left" Height="23" Margin="5"  TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Text="{Binding Path=Telephone, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="367">
+                <Label x:Name="labelFaxArmateur" Content="Fax Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="95"/>
+                <TextBox x:Name="textBoxFaxArmateur" HorizontalAlignment="Left" Height="23" Margin="5"  TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Text="{Binding Path=Fax, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelEmailArmateur" Content="E-mail Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxEmailArmateur" HorizontalAlignment="Left" Height="23" Margin="5"  TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Text="{Binding Path=Email, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="290">
+                <Label x:Name="labelCodePavillon" Content="Code Pavillon :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBoxCodePavillon" Width="100" DisplayMemberPath="Code"  ItemsSource="{Binding}"  Text="{Binding Path=CodePavillon, Mode=TwoWay}"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"/>
+        </WrapPanel>
+        <Button x:Name="buttonAnnuler" Content="Annuler" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Click="buttonAnnuler_Click"/>
+        <Button x:Name="buttonEnregistrer" Content="Enregistrer" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="buttonEnregistrer_Click"/>
+        <Button x:Name="buttonRetour" Content="Retour" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Click="buttonRetour_Click"/>
+    </Grid>
+</Page>

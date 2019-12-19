@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WpfGescale. Pavillon">
+    <Position X="0.5" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Metier\Pavillon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale.AccesAuxDonnees">
+    <Position X="4.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>kAAAAQAIAABAAAAAAQAACCAAAAAAgAAAAAABAAEAAAA=</HashCode>
+      <FileName>AccesAuxDonnees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale. Navire">
+    <Position X="0.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAEIAAAAAAAAAAgBEAAAACCKAQAAAACAAABAEAAAI=</HashCode>
+      <FileName>Metier\Navire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale.Acces_aux_donnees.AccesAuxDonneesArmateur">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accesauxdonnees\AccesAuxDonneesArmateur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale.Acces_aux_donnees.AccesAuxDonneesCommandant">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accesauxdonnees\AccesAuxDonneesCommandant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale.Acces_aux_donnees.AccesAuxDonneesEscale">
+    <Position X="13.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accesauxdonnees\AccesAuxDonneesEscale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale.Acces_aux_donnees.AccesAuxDonneesNavire">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accesauxdonnees\AccesAuxDonneesNavire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale.Acces_aux_donnees.AccesAuxDonneesPavillon">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accesauxdonnees\AccesAuxDonneesPavillon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfGescale.Accesauxdonnees.AccesAuxDonneesTypeNavire" Collapsed="true">
+    <Position X="13.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accesauxdonnees\AccesAuxDonneesTypeNavire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

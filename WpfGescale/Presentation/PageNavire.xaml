@@ -1,0 +1,70 @@
+﻿<Page x:Name="pageNavire" x:Class="WpfGescale.PageNavire"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfGescale"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="PageNavire" WindowTitle="Nouveau Navire" Loaded="PageNavire_Loaded"> 
+
+    <Grid Name="GrilleNouveauNavire" Margin="10">
+        <WrapPanel Name="WrapNouveauNavire">
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelNumLlo" Content="Numéro Lloyds :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxNumLlo" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Text="{Binding Path=Llyods,Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelNomNav" Content="Nom Navire :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxNomNav" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Text="{Binding Path=Nom,Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelAnnCon" Content="Année de construction :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="135"/>
+                <TextBox x:Name="textBoxAnnCon" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Text="{Binding Path=AnnCon,Mode=OneWayToSource}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="318">
+                <Label x:Name="labelDatDre" Content="Date de dernière révision :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <DatePicker x:Name="DatePickerDatDre" HorizontalAlignment="Left" Height="23" Margin="5" VerticalAlignment="Top" Width="151" SelectedDateFormat="Long" Text="{Binding Path=DatDre,Mode=OneWayToSource}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelLarNav" Content="Largeur Navire :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxLarNav" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Text="{Binding Path=Largeur,Mode=OneWayToSource}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelLongNav" Content="Longueur Navire :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxLongNav" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="{Binding Path=Longueur,Mode=OneWayToSource}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelTirEau" Content="Tirant Eau :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxTirEau" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Text="{Binding Path=Tirant,Mode=OneWayToSource}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelProNav" Content="Propulseur (O/N) :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxProNav" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="{Binding Path=Propulseur,Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelCapNav" Content="Capacité Navire :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxCapNav" HorizontalAlignment="Left" Height="23" Margin="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="{Binding Path=Capacite,Mode=OneWayToSource}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelNumCom" Content="Numéro Commandant :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBoxNumCom" Width="131" Height="24" DisplayMemberPath="Code" ItemsSource="{Binding}" Text="{Binding Path=NumCom,Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="202">
+                <Label x:Name="labelNumArm" Content="Numéro Armateur :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBoxNumArm" Width="72" Height="24" DisplayMemberPath="Numero" ItemsSource="{Binding}" Text="{Binding Path=NumArm,Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelCTyNav" Content="Code Type Navire :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBoxCTyNav" Width="63" Height="24" DisplayMemberPath="CodeTypeNavire" ItemsSource="{Binding}" Text="{Binding Path=CTyNav,Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="labelCodPor" Content="Code Port :" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBoxCodPor" Width="69" Height="24" DisplayMemberPath="Code" ItemsSource="{Binding}" Text="{Binding Path=CodPor,Mode=TwoWay}"/>
+            </StackPanel>
+        </WrapPanel>
+        <Button x:Name="buttonAnnuler" Content="Annuler" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Click="buttonAnnuler_Click"/>
+        <Button x:Name="buttonEnregistrer" Content="Enregistrer" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="buttonEnregistrer_Click"/>
+        <Button x:Name="buttonRetour" Content="Retour" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Click="buttonRetour_Click"/>
+    </Grid>
+</Page>
